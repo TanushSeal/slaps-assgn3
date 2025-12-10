@@ -1,0 +1,289 @@
+tanush@tanush-HP-Laptop-15-bs0xx:~/assgn3$ /bin/python3 /home/tanush/assgn3/baseline_cnn.py
+Preparing Data...
+Training on cpu...
+Epoch 1/50, Loss: 1.8946 (LR: 1.0e-03)
+Epoch 2/50, Loss: 1.3005 (LR: 1.0e-03)
+Epoch 3/50, Loss: 1.1070 (LR: 1.0e-03)
+Epoch 4/50, Loss: 0.9734 (LR: 1.0e-03)
+Epoch 5/50, Loss: 0.8865 (LR: 1.0e-04)
+Epoch 6/50, Loss: 0.6979 (LR: 1.0e-04)
+Epoch 7/50, Loss: 0.6571 (LR: 1.0e-04)
+Epoch 8/50, Loss: 0.6372 (LR: 1.0e-04)
+Epoch 9/50, Loss: 0.6206 (LR: 1.0e-04)
+Epoch 10/50, Loss: 0.6069 (LR: 1.0e-05)
+Epoch 11/50, Loss: 0.5801 (LR: 1.0e-05)
+Epoch 12/50, Loss: 0.5769 (LR: 1.0e-05)
+Epoch 13/50, Loss: 0.5748 (LR: 1.0e-05)
+Epoch 14/50, Loss: 0.5730 (LR: 1.0e-05)
+Epoch 15/50, Loss: 0.5717 (LR: 1.0e-06)
+Epoch 16/50, Loss: 0.5685 (LR: 1.0e-06)
+Epoch 17/50, Loss: 0.5683 (LR: 1.0e-06)
+Epoch 18/50, Loss: 0.5682 (LR: 1.0e-06)
+Epoch 19/50, Loss: 0.5679 (LR: 1.0e-06)
+Epoch 20/50, Loss: 0.5677 (LR: 1.0e-07)
+Epoch 21/50, Loss: 0.5674 (LR: 1.0e-07)
+Epoch 22/50, Loss: 0.5673 (LR: 1.0e-07)
+Epoch 23/50, Loss: 0.5673 (LR: 1.0e-07)
+Epoch 24/50, Loss: 0.5672 (LR: 1.0e-07)
+Epoch 25/50, Loss: 0.5672 (LR: 1.0e-08)
+Epoch 26/50, Loss: 0.5671 (LR: 1.0e-08)
+Epoch 27/50, Loss: 0.5672 (LR: 1.0e-08)
+Epoch 28/50, Loss: 0.5672 (LR: 1.0e-08)
+Epoch 29/50, Loss: 0.5673 (LR: 1.0e-08)
+Epoch 30/50, Loss: 0.5673 (LR: 1.0e-09)
+Epoch 31/50, Loss: 0.5671 (LR: 1.0e-09)
+Epoch 32/50, Loss: 0.5671 (LR: 1.0e-09)
+Epoch 33/50, Loss: 0.5673 (LR: 1.0e-09)
+Epoch 34/50, Loss: 0.5672 (LR: 1.0e-09)
+Epoch 35/50, Loss: 0.5673 (LR: 1.0e-10)
+Epoch 36/50, Loss: 0.5672 (LR: 1.0e-10)
+Epoch 37/50, Loss: 0.5672 (LR: 1.0e-10)
+Epoch 38/50, Loss: 0.5672 (LR: 1.0e-10)
+Epoch 39/50, Loss: 0.5671 (LR: 1.0e-10)
+Epoch 40/50, Loss: 0.5672 (LR: 1.0e-11)
+Epoch 41/50, Loss: 0.5672 (LR: 1.0e-11)
+Epoch 42/50, Loss: 0.5673 (LR: 1.0e-11)
+Epoch 43/50, Loss: 0.5671 (LR: 1.0e-11)
+Epoch 44/50, Loss: 0.5672 (LR: 1.0e-11)
+Epoch 45/50, Loss: 0.5672 (LR: 1.0e-12)
+Epoch 46/50, Loss: 0.5672 (LR: 1.0e-12)
+Epoch 47/50, Loss: 0.5673 (LR: 1.0e-12)
+Epoch 48/50, Loss: 0.5672 (LR: 1.0e-12)
+Epoch 49/50, Loss: 0.5672 (LR: 1.0e-12)
+Epoch 50/50, Loss: 0.5673 (LR: 1.0e-13)
+Evaluating...
+Final Baseline Accuracy: 77.58%
+Saving Baseline Model to 'baseline_cnn.pth'...
+Saved successfully!
+tanush@tanush-HP-Laptop-15-bs0xx:~/assgn3$ /bin/python3 /home/tanush/assgn3/pro.py
+/home/tanush/.local/lib/python3.10/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found
+  warnings.warn("ApproximateEngine is not available as PySwip could not be found")
+Creating sum_digits dataset with 1000 examples...
+Creating sum_digits dataset with 200 examples...
+Creating product_digits dataset with 200 examples...
+Creating diff_digits dataset with 200 examples...
+
+--- Starting Neuro-Symbolic Training (2 Epochs) ---
+Training  for 25 epoch(s)
+Epoch 1
+/home/tanush/.local/lib/python3.10/site-packages/deepproblog/semiring/graph_semiring.py:77: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  return -self.eps <= float(a) <= self.eps
+Iteration:  10  s:19.9002       Average Loss:  2.4804560005664826
+Iteration:  20  s:20.6035       Average Loss:  2.7955479443073274
+Iteration:  30  s:20.4483       Average Loss:  2.6832988291978834
+Iteration:  40  s:20.2025       Average Loss:  2.554597134888172
+Iteration:  50  s:21.9630       Average Loss:  2.3775336660444735
+Iteration:  60  s:20.3760       Average Loss:  2.232965945266187
+Epoch time:  130.4769148826599
+Epoch 2
+Iteration:  70  s:18.9540       Average Loss:  2.1564069502055645
+Iteration:  80  s:19.8366       Average Loss:  1.8143400341272353
+Iteration:  90  s:19.9244       Average Loss:  1.6354480575158958
+Iteration:  100         s:20.1160       Average Loss:  1.3066113584674894
+Iteration:  110         s:19.8801       Average Loss:  1.249352718051523
+Iteration:  120         s:19.7862       Average Loss:  0.8563054217480385
+Epoch time:  124.26138639450073
+Epoch 3
+Iteration:  130         s:18.5881       Average Loss:  0.8588346596952761
+Iteration:  140         s:19.9220       Average Loss:  0.7743003896233859
+Iteration:  150         s:19.7978       Average Loss:  0.5535079656918243
+Iteration:  160         s:19.2372       Average Loss:  0.6762404688386596
+Iteration:  170         s:19.3151       Average Loss:  0.5797590583853889
+Iteration:  180         s:19.6068       Average Loss:  0.5911273604238886
+Iteration:  190         s:18.3948       Average Loss:  0.5518798672688717
+Epoch time:  122.11578583717346
+Epoch 4
+Iteration:  200         s:19.1341       Average Loss:  0.40779227563762105
+Iteration:  210         s:19.3410       Average Loss:  0.5957207169090907
+Iteration:  220         s:19.4134       Average Loss:  0.46449143014087896
+Iteration:  230         s:19.6168       Average Loss:  0.3700045665798825
+Iteration:  240         s:19.1247       Average Loss:  0.538448208218233
+Iteration:  250         s:19.0483       Average Loss:  0.3152389241853598
+Epoch time:  120.53324866294861
+Epoch 5
+Iteration:  260         s:18.3925       Average Loss:  0.2762854334501753
+Iteration:  270         s:19.3352       Average Loss:  0.2925993741588172
+Iteration:  280         s:18.9608       Average Loss:  0.2754781709197232
+Iteration:  290         s:18.7168       Average Loss:  0.31496875502762123
+Iteration:  300         s:20.8577       Average Loss:  0.3887101569907827
+Iteration:  310         s:19.0843       Average Loss:  0.2577797845431832
+Epoch time:  120.77373671531677
+Epoch 6
+Iteration:  320         s:22.0905       Average Loss:  0.2684328302049607
+Iteration:  330         s:20.7818       Average Loss:  0.21778234842295205
+Iteration:  340         s:18.7640       Average Loss:  0.1942524275354509
+Iteration:  350         s:18.5369       Average Loss:  0.1764610874770966
+Iteration:  360         s:14.2332       Average Loss:  0.32308309497971094
+Iteration:  370         s:8.4208        Average Loss:  0.18691793323055209
+Epoch time:  99.87242388725281
+Epoch 7
+Iteration:  380         s:8.1560        Average Loss:  0.3195346042109577
+Iteration:  390         s:8.3444        Average Loss:  0.1717937354651987
+Iteration:  400         s:8.5924        Average Loss:  0.28118756997537275
+Iteration:  410         s:8.4141        Average Loss:  0.23284953097730693
+Iteration:  420         s:8.3593        Average Loss:  0.20856131032855957
+Iteration:  430         s:8.4151        Average Loss:  0.16636203086267187
+Iteration:  440         s:8.4608        Average Loss:  0.18151450547955447
+Epoch time:  52.6943199634552
+Epoch 8
+Iteration:  450         s:7.9681        Average Loss:  0.16377767558534514
+Iteration:  460         s:8.3684        Average Loss:  0.1320985351355199
+Iteration:  470         s:8.3832        Average Loss:  0.16747841881216857
+Iteration:  480         s:8.3452        Average Loss:  0.18163747024597116
+Iteration:  490         s:8.2276        Average Loss:  0.13270912382122418
+Iteration:  500         s:8.2207        Average Loss:  0.18488807444154473
+Epoch time:  51.98105025291443
+Epoch 9
+Iteration:  510         s:7.8543        Average Loss:  0.15104080226202576
+Iteration:  520         s:8.4754        Average Loss:  0.1294828790381865
+Iteration:  530         s:8.2278        Average Loss:  0.14895204090090544
+Iteration:  540         s:8.1564        Average Loss:  0.10723176820396119
+Iteration:  550         s:8.1348        Average Loss:  0.13265992357453796
+Iteration:  560         s:8.1125        Average Loss:  0.11059338368815888
+Epoch time:  51.33984017372131
+Epoch 10
+Iteration:  570         s:7.8289        Average Loss:  0.043161442000460695
+Iteration:  580         s:8.1163        Average Loss:  0.05256778874698228
+Iteration:  590         s:8.2025        Average Loss:  0.04259374477969573
+Iteration:  600         s:8.0906        Average Loss:  0.07736515964090872
+Iteration:  610         s:8.1886        Average Loss:  0.13972324626353344
+Iteration:  620         s:8.0931        Average Loss:  0.11358008611313664
+Iteration:  630         s:8.1133        Average Loss:  0.0879467454896407
+Epoch time:  50.919864654541016
+Epoch 11
+Iteration:  640         s:7.7303        Average Loss:  0.04040758457117777
+Iteration:  650         s:8.1452        Average Loss:  0.07586274574147923
+Iteration:  660         s:8.2327        Average Loss:  0.07081692335482816
+Iteration:  670         s:8.0127        Average Loss:  0.05003406323332116
+Iteration:  680         s:8.0905        Average Loss:  0.078241254448391
+Iteration:  690         s:8.0373        Average Loss:  0.10452752472261069
+Epoch time:  50.74385857582092
+Epoch 12
+Iteration:  700         s:7.7257        Average Loss:  0.0651362345702802
+Iteration:  710         s:8.1146        Average Loss:  0.0867888393181069
+Iteration:  720         s:8.0020        Average Loss:  0.11022780985848728
+Iteration:  730         s:8.0165        Average Loss:  0.06112829197720816
+Iteration:  740         s:8.1560        Average Loss:  0.06315015831516017
+Iteration:  750         s:8.0875        Average Loss:  0.06699615480071489
+Epoch time:  50.4713499546051
+Epoch 13
+Iteration:  760         s:7.6577        Average Loss:  0.05389985542301164
+Iteration:  770         s:8.0032        Average Loss:  0.06503642959171205
+Iteration:  780         s:8.0362        Average Loss:  0.06008797100717624
+Iteration:  790         s:8.1779        Average Loss:  0.08472081027562268
+Iteration:  800         s:8.0366        Average Loss:  0.06661752064017096
+Iteration:  810         s:8.0885        Average Loss:  0.07812393823176964
+Iteration:  820         s:7.6516        Average Loss:  0.07376732379153435
+Epoch time:  50.37449502944946
+Epoch 14
+Iteration:  830         s:8.1382        Average Loss:  0.03171834872599849
+Iteration:  840         s:8.0079        Average Loss:  0.021062481781559096
+Iteration:  850         s:7.9244        Average Loss:  0.018369026328656734
+Iteration:  860         s:7.9680        Average Loss:  0.034201577922538806
+Iteration:  870         s:7.9261        Average Loss:  0.021801102530789686
+Iteration:  880         s:7.9150        Average Loss:  0.042656379908242295
+Epoch time:  49.81557631492615
+Epoch 15
+Iteration:  890         s:7.6417        Average Loss:  0.020728242468063363
+Iteration:  900         s:7.8856        Average Loss:  0.012091236985945141
+Iteration:  910         s:7.8836        Average Loss:  0.016984945803428287
+Iteration:  920         s:7.9415        Average Loss:  0.025878793696937373
+Iteration:  930         s:7.8328        Average Loss:  0.03858725548416719
+Iteration:  940         s:7.8977        Average Loss:  0.011551703431403038
+Epoch time:  49.52933168411255
+Epoch 16
+Iteration:  950         s:7.6798        Average Loss:  0.018337310798454985
+Iteration:  960         s:8.2042        Average Loss:  0.015142786125986218
+Iteration:  970         s:7.9580        Average Loss:  0.027943277409298396
+Iteration:  980         s:7.8789        Average Loss:  0.02828817439435858
+Iteration:  990         s:7.9131        Average Loss:  0.00935431849648415
+Iteration:  1000        s:7.7996        Average Loss:  0.012093237248020194
+Epoch time:  49.81775689125061
+Epoch 17
+Iteration:  1010        s:7.5339        Average Loss:  0.011047762158187058
+Iteration:  1020        s:7.9052        Average Loss:  0.0055807458743990955
+Iteration:  1030        s:7.8594        Average Loss:  0.010540303810428841
+Iteration:  1040        s:7.7862        Average Loss:  0.009127112078297094
+Iteration:  1050        s:7.9027        Average Loss:  0.022308050786906695
+Iteration:  1060        s:7.8765        Average Loss:  0.019156748947476175
+Iteration:  1070        s:7.8871        Average Loss:  0.011552663047930945
+Epoch time:  49.157487869262695
+Epoch 18
+Iteration:  1080        s:7.4057        Average Loss:  0.007316875470037454
+Iteration:  1090        s:7.7784        Average Loss:  0.007823659243777648
+Iteration:  1100        s:7.8884        Average Loss:  0.010152457377509094
+Iteration:  1110        s:7.7956        Average Loss:  0.004091204375602608
+Iteration:  1120        s:7.8067        Average Loss:  0.02360321713857727
+Iteration:  1130        s:7.8085        Average Loss:  0.013919416826673303
+Epoch time:  48.97619843482971
+Epoch 19
+Iteration:  1140        s:7.6308        Average Loss:  0.016106394561569936
+Iteration:  1150        s:7.8021        Average Loss:  0.02246074124365578
+Iteration:  1160        s:7.8295        Average Loss:  0.018318913902314816
+Iteration:  1170        s:7.8381        Average Loss:  0.009710578687596071
+Iteration:  1180        s:7.9070        Average Loss:  0.02477713564634826
+Iteration:  1190        s:7.8283        Average Loss:  0.02400491262628668
+Epoch time:  49.15299320220947
+Epoch 20
+Iteration:  1200        s:7.5509        Average Loss:  0.011003487650563182
+Iteration:  1210        s:7.7877        Average Loss:  0.015451976469663165
+Iteration:  1220        s:7.8788        Average Loss:  0.03733517327455001
+Iteration:  1230        s:7.7885        Average Loss:  0.05617435490442315
+Iteration:  1240        s:7.8871        Average Loss:  0.03835949121633779
+Iteration:  1250        s:7.7436        Average Loss:  0.016364755769424276
+Iteration:  1260        s:7.8636        Average Loss:  0.015224350548086319
+Epoch time:  49.028313875198364
+Epoch 21
+Iteration:  1270        s:7.5015        Average Loss:  0.009288644379384125
+Iteration:  1280        s:7.8603        Average Loss:  0.00821489735213723
+Iteration:  1290        s:7.7398        Average Loss:  0.011084617267682294
+Iteration:  1300        s:7.7604        Average Loss:  0.02373840429754941
+Iteration:  1310        s:7.8525        Average Loss:  0.015608025139646976
+Iteration:  1320        s:7.7329        Average Loss:  0.016008118131965888
+Epoch time:  48.678940773010254
+Epoch 22
+Iteration:  1330        s:7.4387        Average Loss:  0.007502985785707961
+Iteration:  1340        s:7.7095        Average Loss:  0.008071074291744595
+Iteration:  1350        s:7.8337        Average Loss:  0.022567936874758145
+Iteration:  1360        s:8.0437        Average Loss:  0.01965655856683335
+Iteration:  1370        s:7.7798        Average Loss:  0.014473044924743095
+Iteration:  1380        s:7.7910        Average Loss:  0.04278831678494762
+Epoch time:  48.91991949081421
+Epoch 23
+Iteration:  1390        s:7.3837        Average Loss:  0.012354061082508661
+Iteration:  1400        s:7.8353        Average Loss:  0.047103329509718184
+Iteration:  1410        s:7.8449        Average Loss:  0.038559116049123154
+Iteration:  1420        s:7.8540        Average Loss:  0.06619702765922583
+Iteration:  1430        s:7.8591        Average Loss:  0.043590974743178044
+Iteration:  1440        s:7.9411        Average Loss:  0.05995709667985585
+Iteration:  1450        s:7.3857        Average Loss:  0.08170044426294917
+Epoch time:  49.03753352165222
+Epoch 24
+Iteration:  1460        s:7.8508        Average Loss:  0.05699093317677391
+Iteration:  1470        s:7.8153        Average Loss:  0.04531737703501393
+Iteration:  1480        s:7.8930        Average Loss:  0.08169479619047117
+Iteration:  1490        s:7.8163        Average Loss:  0.041902169009796986
+Iteration:  1500        s:7.8599        Average Loss:  0.017569447931596805
+Iteration:  1510        s:7.8325        Average Loss:  0.026331345227322743
+Epoch time:  49.13166928291321
+Epoch 25
+Iteration:  1520        s:7.4752        Average Loss:  0.05805628130471184
+Iteration:  1530        s:7.9347        Average Loss:  0.028647278226717456
+Iteration:  1540        s:7.7140        Average Loss:  0.01844201287191266
+Iteration:  1550        s:7.7144        Average Loss:  0.019967100037726882
+Iteration:  1560        s:7.7084        Average Loss:  0.007044913045423762
+Iteration:  1570        s:7.8707        Average Loss:  0.01135139828990267
+Epoch time:  48.55650496482849
+
+--- Evaluating Sum Accuracy ---
+Sum Accuracy: 91.50%
+
+--- Evaluating Product (Zero-Shot) Accuracy ---
+Product (Zero-Shot) Accuracy: 93.00%
+
+--- Evaluating Difference (Zero-Shot) Accuracy ---
+Difference (Zero-Shot) Accuracy: 91.50%
+
+--- Saving Model to 'mnist_neurosymbolic.pth' ---
+Model saved successfully!
