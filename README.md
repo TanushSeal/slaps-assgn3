@@ -116,5 +116,5 @@ The most critical advantage demonstrated in this experiment is **Zero-Shot Trans
 ## 5. Conclusion
 
 The experiment confirms that while standard Deep Learning (Baseline) can approximate arithmetic functions, it is inefficient and brittle (77.58% accuracy) when training data is limited. The Neuro-Symbolic approach (DeepProbLog) successfully integrated perception and reasoning, achieving superior accuracy (91.50%) and, crucially, the ability to generalize to new arithmetic tasks without additional training.
-"""
+
 
