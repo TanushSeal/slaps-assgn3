@@ -1,6 +1,4 @@
-# This script generates the report.md file with the analysis of your experiment.
-
-report_content = r"""# Visual Arithmetic: Neuro-Symbolic vs. Connectionist Approaches
+# SLAPS-Assignment 3: Visual Arithmetic
 
 ## 1. Executive Summary
 
@@ -120,14 +118,3 @@ The most critical advantage demonstrated in this experiment is **Zero-Shot Trans
 The experiment confirms that while standard Deep Learning (Baseline) can approximate arithmetic functions, it is inefficient and brittle (77.58% accuracy) when training data is limited. The Neuro-Symbolic approach (DeepProbLog) successfully integrated perception and reasoning, achieving superior accuracy (91.50%) and, crucially, the ability to generalize to new arithmetic tasks without additional training.
 """
 
-def save_report():
-    filename = "report.md"
-    try:
-        with open(filename, "w", encoding="utf-8") as f:
-            f.write(report_content)
-        print(f"Successfully generated '{filename}'")
-    except Exception as e:
-        print(f"Error generating file: {e}")
-
-if __name__ == "__main__":
-    save_report()
